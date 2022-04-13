@@ -1,0 +1,44 @@
+*,*::before,*::after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.searchbar{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+
+}
+.searchbar > label {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.search {
+    font-size: 1.5rem;
+}
+
+
+.users{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: .5rem;
+    margin-top: 1rem;
+}
+.card{
+    border: 1px solid black;
+    padding: 1.5rem;
+}
+.email{
+    color: gray;
+}
+.card > .name {
+    margin-bottom: .25rem;
+    font-size: 1.2rem;
+}
+.hide {
+    display: none;
+}
